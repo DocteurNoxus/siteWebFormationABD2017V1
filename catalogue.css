@@ -1,0 +1,70 @@
+#filter{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+#navmenu{
+	float:left;
+	height: 1250px;
+}
+
+footer {
+	clear: left;
+	background-color: #303030;
+	height: 200px;
+}
+
+.pagination{
+	margin-top: 10px;
+	margin-left: 825px;
+}
+
+.images{
+	margin-top: 50px;
+	margin-left: 500px;
+}
+
+.produit{
+	float:left;
+}
+
+/*.derproduit{
+	
+}*/
+
+
+
+.chemin{
+	margin-top:50px;
+}
+
+.topvente{
+	margin-top: 70px;
+}
+
+/*// The heart of the matter 
+.testimonial-group > .row {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .col-xs-4 {
+  display: inline;
+}
+
+//Decorations 
+.col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; width:300px}
+.col-xs-4:nth-child(3n+1) { background: #c69; }
+.col-xs-4:nth-child(3n+2) { background: #9c6; }
+.col-xs-4:nth-child(3n+3) { background: #69c; }*/
+.spanimages{
+	overflow: auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.row-fluid{
+     white-space: nowrap;
+}
+.row-fluid .col-lg-3{
+     display: inline-block;
+}
