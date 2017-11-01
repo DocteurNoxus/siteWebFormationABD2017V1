@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Page Panier</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  <script src="produitDeProduit.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="font\font.css">
+    <!-- <link rel="stylesheet" type="text/css" href="jQuery_diapo\css\style.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link href="cssPanier.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top-1">
+    <div class="container">
+      <a class="navbar-brand" href="#">Golden Clop + Logo ♫</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">S'inscrire/Se connecter</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html"><span class="logo"><img src="panier.png" width="30" height="30">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Aide</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    </header>
+	 <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Informatiques <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DVD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cle</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jeux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav item again</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">One more nav</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Another nav item</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav item again</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">One more nav</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Another nav item</a>
+                    </li>
+                </ul>
+            </nav>
+			
+	<!-- Boostrap pris sur : https://bootsnipp.com/snippets/featured/shopping-cart-bs-3	-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-10 col-md-offset-1">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Produit</th>
+								<th>Quantité</th>
+								<th class="text-center">Prix</th>
+								<th class="text-center">Total</th>
+								<th> </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="col-sm-8 col-md-6">
+								<div class="media">
+									<a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+									<div class="media-body">
+										<h4 class="media-heading"><a href="#">Nom du Produit</a></h4>
+										<span>Status: </span><span class="text-success"><strong>En Stock</strong></span>
+									</div>
+								</div></td>
+								<td class="col-sm-1 col-md-1" style="text-align: center">
+								<input type="email" class="form-control" id="exampleInputEmail1" value="3">
+								</td>
+								<td class="col-sm-1 col-md-1 text-center"><strong>4.87€ </strong></td>
+								<td class="col-sm-1 col-md-1 text-center"><strong>14.61€ </strong></td>
+								<td class="col-sm-1 col-md-1">
+								<button type="button" class="btn btn-danger">
+									<span class="glyphicon glyphicon-remove"></span> Supprimer
+								</button></td>
+							</tr>
+							<tr>
+								<td class="col-md-6">
+								<div class="media">
+									<a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+									<div class="media-body">
+										<h4 class="media-heading"><a href="#">Nom du Produit</a></h4>
+										<span>Status: </span><span class="text-warning"><strong>Arrivage dans 2 - 3 semaines</strong></span>
+									</div>
+								</div></td>
+								<td class="col-md-1" style="text-align: center">
+								<input type="email" class="form-control" id="exampleInputEmail1" value="2">
+								</td>
+								<td class="col-md-1 text-center"><strong>4.99€</strong></td>
+								<td class="col-md-1 text-center"><strong>9.98€</strong></td>
+								<td class="col-md-1">
+								<button type="button" class="btn btn-danger">
+									<span class="glyphicon glyphicon-remove"></span> Supprimer
+								</button></td>
+							</tr>
+							<tr>
+								<td>   </td>
+								<td>   </td>
+								<td>   </td>
+								<td><h5>Sous-Total</h5></td>
+								<td class="text-right"><h5><strong>24.59€</strong></h5></td>
+							</tr>
+							<tr>
+								<td>   </td>
+								<td>   </td>
+								<td>   </td>
+								<td><h5>Frais de port</h5></td>
+								<td class="text-right"><h5><strong>6.94€</strong></h5></td>
+							</tr>
+							<tr>
+								<td>   </td>
+								<td>   </td>
+								<td>   </td>
+								<td><h3>Total</h3></td>
+								<td class="text-right"><h3><strong>31.53€</strong></h3></td>
+							</tr>
+							<tr>
+								<td>   </td>
+								<td>   </td>
+								<td>   </td>
+								<td>
+								<button type="button" class="btn btn-default">
+									<span class="glyphicon glyphicon-shopping-cart"></span> Continuer à faire des emplettes
+								</button></td>
+								<td>
+								<button type="button" class="btn btn-success">
+									Payer  <span class="glyphicon glyphicon-play"></span>
+								</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="promoBox info-box info-ribbon">
+			<aside><p>Carte Promo</p></aside>
+			<h4>N'oubliez pas de prendre notre carte promo</h4>
+			<p>Elle permet de reduire la facture de 5% !</p>
+		</div>
+	</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+ <footer class="py-5 bg-dark">
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <div class="container">
+        <div class="text-center center-block">
+          <p color = "wright" class ="fa">Nous retrouver : </p>
+          <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+      </div>
+    </footer>
