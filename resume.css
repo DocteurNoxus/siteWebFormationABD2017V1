@@ -1,0 +1,51 @@
+@font-face {
+    font-family: balls_of_bastille;
+    src: url(balls_of_bastille\Balls_of_Bastille.otf);
+}
+
+.white_background{
+	background-color:white;
+    margin-top:20px;
+	margin-left:300px;
+	margin-right: 300px;
+}
+
+.border_blue{
+	border-left: 5px solid;
+	border-color: #1E90FF;
+}
+
+.border_yellow{
+	border-left: 5px solid;
+	border-color: #DAA520;
+}
+
+.border_green{
+	border-left: 5px solid;
+	border-color: #1FA055;
+}
+
+body {
+	background-color: #DCDCDC
+}
+
+p{
+	margin-left:20px;
+	font-family: balls_of_bastille;
+}
+
+h4{
+	margin-left:10px;
+    padding-top: 10px;
+	font-family: balls_of_bastille;
+}
+
+td{
+    padding-left:20px;
+}
+
+footer {
+	clear: left;
+	background-color: #303030;
+	height: 200px;
+}
