@@ -1,185 +1,167 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <title>Page Payement</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--  <script src="produitDeProduit.js"></script>-->
-    <link rel="stylesheet" type="text/css" href="font\font.css">
-    <!-- <link rel="stylesheet" type="text/css" href="jQuery_diapo\css\style.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-	<link href="cssPayement.css" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-</head>
-
-<body>
-    <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top-1">
-    <div class="container">
-      <a class="navbar-brand" href="#">Golden Clop + Logo ♫</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">S'inscrire/Se connecter</a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html"><span class="logo"><img src="panier.png" width="30" height="30">
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Aide</a>
-            </li>
-          </ul>
-        </div>
+   <head>
+      <title>Page Payement</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--  <script src="produitDeProduit.js"></script>-->
+      <link rel="stylesheet" type="text/css" href="font\font.css">
+      <!-- <link rel="stylesheet" type="text/css" href="jQuery_diapo\css\style.css"> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+      <link href="cssPayement.css" rel="stylesheet" type="text/css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top-1">
+            <div class="container">
+               <a class="navbar-brand" href="#">Golden Clop + Logo ♫</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">S'inscrire/Se connecter</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="index.html">
+                           <span class="logo"><img src="panier.png" width="30" height="30">
+                     </li>
+                     <li class="nav-item">
+                     <a class="nav-link" href="#">Aide</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- Stripe bootstrap -->
+      <div class="stepwizard">
+         <div class="stepwizard-row">
+            <div class="stepwizard-step">
+               <button type="button" class="btn btn-danger btn-circle">1</button>
+               <p>Choix Carte</p>
+            </div>
+            <div class="stepwizard-step">
+               <button type="button" class="btn btn-primary btn-circle">2</button>
+               <p>Résumé</p>
+            </div>
+            <div class="stepwizard-step">
+               <button type="button" class="btn btn-success btn-circle" disabled="disabled">3</button>
+               <p>Payement</p>
+            </div>
+         </div>
       </div>
-    </nav>
-	</header>
-	
-	<!-- Stripe bootstrap -->
-	
-<div class="stepwizard">
-    <div class="stepwizard-row">
-        <div class="stepwizard-step">
-            <button type="button" class="btn btn-danger btn-circle">1</button>
-            <p>Choix Carte</p>
-        </div>
-        <div class="stepwizard-step">
-            <button type="button" class="btn btn-primary btn-circle">2</button>
-            <p>Résumé</p>
-        </div>
-        <div class="stepwizard-step">
-            <button type="button" class="btn btn-success btn-circle" disabled="disabled">3</button>
-            <p>Payement</p>
-        </div> 
-    </div>
-</div>
-
-  
-<div class="container">
-				<div id ="pp">
-			 		<h2 >Page Payement</h2>
-				</div>
-    <div class="row">
-        <!-- You can make it whatever width you want. I'm making it full width
-             on <= small devices and 4/12 page width on >= medium devices -->
-
-        <div id="divPositon">
-        
-
- 
-            <!-- CREDIT CARD FORM STARTS HERE -->
-            <div class="panel panel-default credit-card-box">
-                <div class="panel-heading display-table" >
-                    <div class="row display-tr" >
+      <div class="container">
+         <div id ="pp">
+            <h2 >Page Payement</h2>
+         </div>
+         <div class="row">
+            <!-- You can make it whatever width you want. I'm making it full width
+               on <= small devices and 4/12 page width on >= medium devices -->
+            <div id="divPositon">
+               <div class="panel panel-default credit-card-box">
+                  <div class="panel-heading display-table" >
+                     <div class="row display-tr" >
                         <h3 class="panel-title display-td" >Details du payement </h3>
                         <div class="display-td" >                            
-                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                           <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
                         </div>
-                    </div>                    
-                </div>
-                <div class="panel-body">
-                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                     </div>
+                  </div>
+                  <div class="panel-body">
+                     <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
                         <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                    <label for="cardNumber">Numero de Carte</label>
-                                    <div class="input-group">
-                                        <input 
-                                            type="tel"
-                                            class="form-control"
-                                            name="cardNumber"
-                                            placeholder="Valid Card Number"
-                                            autocomplete="cc-number"
-                                            required autofocus 
-                                        />
-                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
-                                    </div>
-                                </div>                            
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">  EXP</span> DATE</label>
+                           <div class="col-xs-12">
+                              <div class="form-group">
+                                 <label for="cardNumber">Numero de Carte</label>
+                                 <div class="input-group">
                                     <input 
-                                        type="tel" 
-                                        class="form-control" 
-                                        name="cardExpiry"
-                                        placeholder="MM / YY"
-                                        autocomplete="cc-exp"
-                                        required 
-                                    />
-                                </div>
-                            </div>
-                            <div class="col-xs-5 col-md-5 pull-right">
-                                <div class="form-group">
-                                    <label for="cardCVC">CV CODE</label>
-                                    <input 
-                                        type="tel" 
-                                        class="form-control"
-                                        name="cardCVC"
-                                        placeholder="CVC"
-                                        autocomplete="cc-csc"
-                                        required
-                                    />
-                                </div>
-                            </div>
+                                       type="tel"
+                                       class="form-control"
+                                       name="cardNumber"
+                                       placeholder="Valid Card Number"
+                                       autocomplete="cc-number"
+                                       required autofocus 
+                                       />
+                                    <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                    <label for="couponCode">Code Promo</label>
-                                    <input type="text" class="form-control" name="couponCode" />
-                                </div>
-                            </div>                        
+                           <div class="col-xs-12">
+                              <div class="form-group">
+                                 <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">  EXP</span> DATE</label>
+                                 <input 
+                                    type="tel" 
+                                    class="form-control" 
+                                    name="cardExpiry"
+                                    placeholder="MM / YY"
+                                    autocomplete="cc-exp"
+                                    required 
+                                    />
+                              </div>
+                           </div>
+                           <div class="col-xs-5 col-md-5 pull-right">
+                              <div class="form-group">
+                                 <label for="cardCVC">CV CODE</label>
+                                 <input 
+                                    type="tel" 
+                                    class="form-control"
+                                    name="cardCVC"
+                                    placeholder="CVC"
+                                    autocomplete="cc-csc"
+                                    required
+                                    />
+                              </div>
+                           </div>
                         </div>
                         <div class="row">
-							<button class="subscribe btn btn-danger btn-lg btn-block" type="button">Retour à la page résumé</button>
-                            <button class="subscribe btn btn-success btn-lg btn-block" type="button">Payer !</button>
+                           <div class="col-xs-12">
+                              <div class="form-group">
+                                 <label for="couponCode">Code Promo</label>
+                                 <input type="text" class="form-control" name="couponCode" />
+                              </div>
+                           </div>
                         </div>
-						
+                        <div class="row">
+                           <button class="subscribe btn btn-danger btn-lg btn-block" type="button">Retour à la page résumé</button>
+                           <button class="subscribe btn btn-success btn-lg btn-block" type="button">Payer !</button>
+                        </div>
                         <div class="row" style="display:none;">
-                            <div class="col-xs-12">
-                                <p class="payment-errors"></p>
-                            </div>
+                           <div class="col-xs-12">
+                              <p class="payment-errors"></p>
+                           </div>
                         </div>
-                    </form>
-                </div>
-            </div>    
-			
-            <!-- CREDIT CARD FORM ENDS HERE -->
-            
-            
-        </div>
-	</div>
-</div>
-	 <footer class="py-5 bg-dark" id ="footer">
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <!-- // -->
-      <div class="container">
-        <div class="text-center center-block">
-          <p color = "wright" class ="fa">Nous retrouver : </p>
-          <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
-          <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
-          <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
-          <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
-        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </footer>
-	
-	
-	
-</body>
+      <footer class="py-5 bg-dark" id ="footer">
+         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+         <!-- // -->
+         <div class="container">
+            <div class="text-center center-block">
+               <p color = "wright" class ="fa">Nous retrouver : </p>
+               <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social"></i></a>
+               <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social"></i></a>
+               <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+               <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social"></i></a>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
